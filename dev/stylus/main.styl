@@ -1,0 +1,136 @@
+/*####################################
+#
+#	Autor: Hector Sevilla
+#	Descripcion: Hoja de estilos para 
+#				 la plantilla web de 
+				 Manantiales de Santo Domingo
+#	Fecha: 08/11/2014
+#	Hora: 12:00
+#
+#	1- Cabecera
+#	2- Menu
+#	3- Slider
+#	4- Seccion Principal
+#	5- Reviews
+#	6- mapa
+#	7- Redes Sociales
+#	8- Footer
+#	9- Mediaquery
+#####################################*/
+
+@import 'fonts.styl'
+@import 'normalize.styl'
+@import 'nib'
+
+
+//Colores
+naranja= #d5662b
+gris-bajo = #909194
+headers = #4d4d4d
+gris0 = #edeeef
+gris1 = #e3e5e7
+gris2 = #dbdddf
+gris3 = #ced0d3
+azulFooter = #474b5a
+
+//OOCSS
+
+[class^="icon-"], [class*=" icon-"]
+	font-family 'icomoon'
+	speak none
+	font-style normal
+	font-weight normal
+	font-variant normal
+	text-transform none
+	line-height 1
+	-webkit-font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+
+.icon-reorder
+	&:before
+		content: "\e600"
+
+.icon-mapmarker
+	&:before 
+		content: "\e601"
+
+.icon-facebook-square
+	&:before 
+		content: "\f082"
+
+.icon-linkedin-square
+	&:before 
+		content: "\f08c"
+
+.icon-phone
+	&:before 
+		content: "\f095"
+
+.icon-mail-color
+	&:before
+		content: "\f0e0"
+alinear()
+	display inline-block
+	vertical-align top
+rem(pixel)
+	(pixel/16)rem
+html
+	font-size: 16px
+a
+	text-decoration none
+ul
+p
+figure
+	margin 0
+	padding 0
+ul
+	list-style none
+h1
+	font-family: RobotoBold
+	font-size: rem(30)
+	color headers
+h2
+	font-family: RobotoBold
+	font-size: rem(24)
+	color headers
+h3
+	font-family: RobotoBold
+	font-size: rem(36)
+	color headers
+	margin-top: 0
+input[type="text"]
+input[type="mail"]
+	border 1px solid #d0dee7
+	box-sizing border-box
+	height 30px
+	padding-left: .7rem
+	width 100%
+textarea
+	border 1px solid #d0dee7
+	box-sizing border-box
+	padding-left: .7rem
+	width 100%
+.boton
+	background-color: naranja
+	height 40px
+	width 170px
+	box-sizing: border-box
+	padding .5rem 0
+	text-align: center
+	margin 1.5rem auto
+	a
+		&:link
+		&:visited
+			color white
+			text-transform: uppercase
+			font-size: 14px
+body
+	font-family: OSansReg
+	font-size: 16px
+	font-weight: normal
+	color headers
+
+
+	
+			
+			
