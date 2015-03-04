@@ -1,43 +1,57 @@
 @font-face {
-  font-family: icomoon;
+  font-family: OpenSans400;
   font-weight: normal;
-  src: url("../fonts/icomoon.eot");
-  src: url("../fonts/icomoon.eot?#iefix") format('embedded-opentype'),url("../fonts/icomoon.woff") format('woff'),url("../fonts/icomoon.ttf") format('truetype'),url("../fonts/icomoon.svg#icomoon") format('svg');
+  src: url("../fonts/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/OpenSans-Regular-webfont.woff") format('woff'),url("../fonts/OpenSans-Regular-webfont.ttf") format('truetype'),url("../fonts/OpenSans-Regular-webfont.svg#OpenSans-Regular-webfont") format('svg');
 }
 
 @font-face {
-  font-family: OSansBold;
+  font-family: pristina;
   font-weight: normal;
-  src: url("../fonts/opensans-bold-webfont.eot");
-  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/opensans-bold-webfont.woff") format('woff'),url("../fonts/opensans-bold-webfont.ttf") format('truetype'),url("../fonts/opensans-bold-webfont.svg#opensans-bold-webfont") format('svg');
+  src: url("../fonts/Pristina.eot");
+  src: url("../fonts/Pristina.eot?#iefix") format('embedded-opentype'),url("../fonts/Pristina.woff") format('woff'),url("../fonts/Pristina.ttf") format('truetype'),url("../fonts/Pristina.svg#Pristina") format('svg');
 }
 
 @font-face {
-  font-family: OSansLight;
+  font-family: GothamXL;
   font-weight: normal;
-  src: url("../fonts/opensans-light-webfont.eot");
-  src: url("../fonts/opensans-light-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/opensans-light-webfont.woff") format('woff'),url("../fonts/opensans-light-webfont.ttf") format('truetype'),url("../fonts/opensans-light-webfont.svg#opensans-light-webfont") format('svg');
+  src: url("../fonts/Gotham-XLight.eot");
+  src: url("../fonts/Gotham-XLight.eot?#iefix") format('embedded-opentype'),url("../fonts/Gotham-XLight.woff") format('woff'),url("../fonts/Gotham-XLight.ttf") format('truetype'),url("../fonts/Gotham-XLight.svg#Gotham-XLight") format('svg');
 }
 
 @font-face {
-  font-family: OSansReg;
+  font-family: GothamBK;
   font-weight: normal;
-  src: url("../fonts/opensans-regular-webfont.eot");
-  src: url("../fonts/opensans-regular-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/opensans-regular-webfont.woff") format('woff'),url("../fonts/opensans-regular-webfont.ttf") format('truetype'),url("../fonts/opensans-regular-webfont.svg#opensans-regular-webfont") format('svg');
+  src: url("../fonts/Gotham-Book.eot");
+  src: url("../fonts/Gotham-Book.eot?#iefix") format('embedded-opentype'),url("../fonts/Gotham-Book.woff") format('woff'),url("../fonts/Gotham-Book.ttf") format('truetype'),url("../fonts/Gotham-Book.svg#Gotham-Book") format('svg');
 }
 
 @font-face {
-  font-family: RobotoBold;
+  font-family: GothamB;
   font-weight: normal;
-  src: url("../fonts/roboto-bold-webfont.eot");
-  src: url("../fonts/roboto-bold-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/roboto-bold-webfont.woff") format('woff'),url("../fonts/roboto-bold-webfont.ttf") format('truetype'),url("../fonts/roboto-bold-webfont.svg#roboto-bold-webfont") format('svg');
+  src: url("../fonts/Gotham-Bold.eot");
+  src: url("../fonts/Gotham-Bold.eot?#iefix") format('embedded-opentype'),url("../fonts/Gotham-Bold.woff") format('woff'),url("../fonts/Gotham-Bold.ttf") format('truetype'),url("../fonts/Gotham-Bold.svg#Gotham-Bold") format('svg');
 }
 
 @font-face {
-  font-family: RobotoMedium;
+  font-family: GothamL;
   font-weight: normal;
-  src: url("../fonts/roboto-medium-webfont.eot");
-  src: url("../fonts/roboto-medium-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/roboto-medium-webfont.woff") format('woff'),url("../fonts/roboto-medium-webfont.ttf") format('truetype'),url("../fonts/roboto-medium-webfont.svg#roboto-medium-webfont") format('svg');
+  src: url("../fonts/Gotham-Light.eot");
+  src: url("../fonts/Gotham-Light.eot?#iefix") format('embedded-opentype'),url("../fonts/Gotham-Light.woff") format('woff'),url("../fonts/Gotham-Light.ttf") format('truetype'),url("../fonts/Gotham-Light.svg#Gotham-Light") format('svg');
+}
+
+@font-face {
+  font-family: GothamM;
+  font-weight: normal;
+  src: url("../fonts/Gotham-Medium.eot");
+  src: url("../fonts/Gotham-Medium.eot?#iefix") format('embedded-opentype'),url("../fonts/Gotham-Medium.woff") format('woff'),url("../fonts/Gotham-Medium.ttf") format('truetype'),url("../fonts/Gotham-Medium.svg#Gotham-Medium") format('svg');
+}
+
+@font-face {
+  font-family: GothamLIta;
+  font-weight: normal;
+  src: url("../fonts/Gotham-LightIta.eot");
+  src: url("../fonts/Gotham-LightIta.eot?#iefix") format('embedded-opentype'),url("../fonts/Gotham-LightIta.woff") format('woff'),url("../fonts/Gotham-LightIta.ttf") format('truetype'),url("../fonts/Gotham-LightIta.svg#Gotham-LightIta") format('svg');
 }
 
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
@@ -77,11 +91,11 @@ input::-moz-focus-inner {
 }
 
 html {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 body {
-  font-family: OSansReg;
+  font-family: OpenSans400;
   font-size: 16px;
   font-weight: normal;
   color: #4d4d4d;
