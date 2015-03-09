@@ -66,10 +66,54 @@ body {
   margin: 0;
 }
 
+figure,
+footer,
+header,
+section {
+  display: block;
+}
+
+a {
+  background: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+img {
+  border: 0;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+input,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
 }
 
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
@@ -84,19 +128,348 @@ body {
   margin: 0;
 }
 
+figure,
+footer,
+header,
+section {
+  display: block;
+}
+
+a {
+  background: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+img {
+  border: 0;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+input,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
 html {
   font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  font-size: 0;
+}
+
+ul,
+p,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-family: GothamXL;
+  font-size: 1.714285714285714rem;
+}
+
+h3 {
+  font-family: GothamXL;
+  font-size: 2.571428571428572rem;
+  margin-top: 0;
+}
+
+input[type="text"] {
+  border: 1px solid #d0dee7;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 30px;
+  padding-left: .7rem;
+  width: 100%;
+}
+
+textarea {
+  border: 1px solid #d0dee7;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: .7rem;
+  width: 100%;
 }
 
 body {
   font-family: OpenSans400;
   font-size: 14px;
   font-weight: normal;
-  color: headers;
+}
+
+h2 {
+  font-family: GothamL;
+  margin-top: 0;
+}
+
+.wrap {
+  padding: 0 1rem;
+}
+
+.info {
+  background-color: #082c4e;
+  color: #fff;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  text-align: center;
+}
+
+.info .telefono:before {
+  content: '\f095';
+  font-family: fontawesome;
+  color: #1363a8;
+  padding-right: .7rem;
+  font-size: 1.3rem;
+}
+
+.info .mail:before {
+  content: '\f0e0';
+  font-family: fontawesome;
+  color: #1363a8;
+  padding-right: .7rem;
+  font-size: 1.3rem;
+}
+
+.info .fbook {
+  text-align: right;
+}
+
+.info .fbook a:before {
+  content: '\f230';
+  font-family: fontawesome;
+  color: #1363a8;
+  padding-right: .7rem;
+  font-size: 2rem;
+}
+
+header {
+  background-color: #000;
+  padding: 4rem 0;
+  color: #fff;
+}
+
+header h3 {
+  font-family: pristina;
+  letter-spacing: 1px;
+  padding: 2rem 0 3rem 0;
+  text-align: center;
+}
+
+.seccion-1 {
+  color: #fff;
+  background-attachment: fixed;
+  background-image: url("../img/gimnasio-seccion-2.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.seccion-1 .box {
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.seccion-3 {
+  background-color: #082c4e;
+  padding: 1rem 0 6rem 0;
+  color: #fff;
+  position: relative;
+}
+
+.seccion-3:after {
+  content: '\f107';
+  font-family: fontawesome;
+  color: #1363a8;
+  padding-right: .7rem;
+  color: #fff;
+  position: absolute;
+  left: 46%;
+  bottom: 3%;
+  font-size: 5rem;
+}
+
+.seccion-3 h2 {
+  text-align: center;
+}
+
+.seccion-3 p {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2rem;
+}
+
+.seccion-4 {
+  background-image: url("../img/fondo-seccion-3.jpg");
+  background-position: top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.seccion-5 {
+  background-image: url("../img/comentarios-seccion-4.jpg");
+  background-position: top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: #082c4e;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: -28px;
+}
+
+.seccion-5 h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.seccion-6 {
+  background-image: url("../img/fondo-premios-seccion-4.png");
+  background-position: top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: #082c4e;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.seccion-6 ul li {
+  position: relative;
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+.seccion-6 ul li span {
+  width: 46px;
+  height: 81px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("../img/icon-premio.png");
+  position: absolute;
+  left: 0;
+  top: -10px;
+}
+
+.seccion-6 ul li:last-child {
+  padding-bottom: 2rem;
+}
+
+.seccion-7 {
+  background-color: #b3b3b3;
+  color: #082c4e;
+}
+
+.seccion-7 h2 {
+  text-align: center;
+}
+
+.seccion-7 ul li {
+  text-transform: capitalize;
+}
+
+.seccion-7 ul li:before {
+  content: '\f00c';
+  font-family: fontawesome;
+  color: #1363a8;
+  padding-right: .7rem;
+}
+
+footer {
+  background-attachment: fixed;
+  background-image: url("../img/footer-fondo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+
+footer .titulo {
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  background-color: #082c4e;
+  margin-bottom: 2rem;
+}
+
+footer .formulario {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .formulario input {
+  color: #082c4e;
+  padding: 2rem 1rem;
+  margin-bottom: 1rem;
+}
+
+footer .formulario input[type="submit"] {
+  color: #fff;
+  background-color: #1363a8;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+footer .formulario textarea {
+  color: #082c4e;
+  padding: 2rem 1rem;
+  margin-bottom: 1rem;
 }

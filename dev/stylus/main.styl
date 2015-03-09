@@ -39,6 +39,9 @@ html
 	font-size: 14px
 a
 	text-decoration none
+img
+	max-width 100%
+	font-size 0
 ul
 p
 figure
@@ -47,17 +50,14 @@ figure
 ul
 	list-style none
 h1
-	font-family: RobotoBold
+	font-family: GothamXL
 	font-size: rem(30)
-	color headers
 h2
-	font-family: RobotoBold
+	font-family: GothamXL
 	font-size: rem(24)
-	color headers
 h3
-	font-family: RobotoBold
+	font-family: GothamXL
 	font-size: rem(36)
-	color headers
 	margin-top: 0
 input[type="text"]
 input[type="mail"]
@@ -75,8 +75,21 @@ body
 	font-family: OpenSans400
 	font-size: 14px
 	font-weight: normal
-	color headers
-
+icon(icono)
+	content "\"+icono
+	font-family fontawesome
+	color azul-claro
+	padding-right .7rem
+	
+parallax(imagen)
+	background-attachment fixed
+	background-image url(../img/imagen)
+	background-position top center
+	background-repeat no-repeat
+	background-size cover
+	//height 70vh
+	position relative
+	//text-indent -9999px
 /* FUENTES 
 
     OPEN SANS REGULAR = OpenSans400
@@ -89,7 +102,152 @@ body
     GOTHAM LIGHT ITALIC = GothamLIta
 
 */
+h1
+h2
+	font-family GothamL
+	margin-top 0
+.wrap
+	padding 0 1rem
+.info
+	background-color azul-oscuro
+	color white
+	padding-top .4rem
+	padding-bottom .4rem
+	text-align center
+	.telefono
+		&:before
+			icon(f095)
+			font-size 1.3rem
+	.mail
+		&:before
+			icon(f0e0)
+			font-size 1.3rem
+	.fbook
+		text-align right
+		a
+			&:before
+				icon(f230)
+				font-size 2rem
 
+//Cabecera
+header
+	background-color #000
+	padding 4rem 0
+	color white
+	h3
+		font-family pristina
+		letter-spacing 1px
+		padding 2rem 0 3rem 0
+		text-align center
+		
+.seccion-1
+	color white
+	parallax("gimnasio-seccion-2.jpg")
+	padding-top 1.5rem
+	padding-bottom 1.5rem
+	.box
+		text-align center
+		margin-bottom 1.8rem
+.seccion-3
+	background-color azul-oscuro
+	padding 1rem 0 6rem 0
+	color white
+	position relative
+	&:after
+		icon(f107)
+		color white
+		position absolute
+		left 46%
+		bottom 3%
+		font-size 5rem
+	h2
+		text-align center
+	p
+		border-bottom 1px solid white
+		padding-bottom 2rem
+.seccion-4
+	background-image url("../img/fondo-seccion-3.jpg")
+	background-position top center
+	background-size cover
+	color white
+	padding-top 2rem
+	padding-bottom 2rem
+.seccion-5
+	background-image url("../img/comentarios-seccion-4.jpg")
+	background-position top center
+	background-size cover
+	color azul-oscuro
+	padding-top 2rem
+	padding-bottom 2rem
+	margin-bottom -28px
+	h2
+		text-transform uppercase
+		text-align center
+.seccion-6
+	background-image url("../img/fondo-premios-seccion-4.png")
+	background-position top center
+	background-size cover
+	color azul-oscuro
+	padding-top 2rem
+	padding-bottom 2rem
+	ul
+		li
+			position relative
+			padding-left 4rem
+			padding-bottom 2rem
+			margin-bottom 3rem
+			span
+				width 46px
+				height 81px
+				display inline-block
+				vertical-align middle
+				background-image url("../img/icon-premio.png")
+				position absolute
+				left 0
+				top -10px
+			&:last-child
+				padding-bottom 2rem
+.seccion-7
+	background-color gris-tono2
+	color azul-oscuro
+	h2
+		text-align center
+	ul
+		li
+			&:before
+				icon(f00c)
+			text-transform capitalize
+footer
+	parallax("footer-fondo.jpg")
+	color white
+	.titulo
+		padding 2rem 1rem 1rem 1rem
+		text-align center
+		background-color azul-oscuro
+		margin-bottom 2rem
+	.formulario
+		max-width 50%
+		margin-left auto
+		margin-right auto
+		input
+			color azul-oscuro
+			padding 2rem 1rem
+			margin-bottom 1rem
+			&[type="submit"]
+				color white
+				background-color azul-claro
+				text-transform uppercase
+				padding 1rem 2rem
+				margin-left auto
+				margin-right auto
+				border 0
+				border-radius 5px
+				display inline-block
+		textarea
+			color azul-oscuro
+			padding 2rem 1rem
+			margin-bottom 1rem
+				
 
 	
 			
