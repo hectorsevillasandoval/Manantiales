@@ -84,6 +84,9 @@ parallax(imagen)
 	//height 70vh
 	position relative
 	//text-indent -9999px
+//Video Background test
+
+
 /* FUENTES 
 
     OPEN SANS REGULAR = OpenSans400
@@ -129,10 +132,24 @@ h2
 
 //Cabecera
 header
-	background-color #000
+	background-image url("../img/bgHeader3.png")
+	background-repeat repeat-x
 	padding 4rem 0
 	color white
 	text-align center
+	position relative
+	#bgvid
+		//position fixed
+		position absolute
+		right 0
+		bottom 0
+		min-width 100%
+		min-height 100%
+		width auto
+		height auto
+		z-index -100
+		background url("../video/movie3.jpg") no-repeat
+		background-size cover
 	h2
 		font-size rem(46)
 	h3
@@ -159,6 +176,9 @@ header
 		h2
 			font-family GothamL
 			font-size rem(30)
+.seccion-2
+	img
+		display block
 .seccion-3
 	background-color azul-oscuro
 	padding 1rem 0 6rem 0
@@ -311,6 +331,9 @@ footer
 		width rem(960)
 		margin-left auto
 		margin-right auto
+	header
+		&.large
+			padding-bottom 15rem
 	.seccion-1
 		&.large
 			.wrap

@@ -33,7 +33,14 @@
                 </div>
             </div>
         </div> <!-- FIN INFO -->
-        <header>
+        <header class="large">
+           
+           <video autoplay loop poster="video/movie3.jpg" id="bgvid">
+                <source src="video/movie3.webm" type="video/webm">
+                <source src="video/movie3.mp4" type="video/mp4">
+            </video>
+           
+           
             <div class="wrap">
                 <div class="contenido">
                     <figure><img src="img/logotipo.png" alt=""></figure>
@@ -182,6 +189,26 @@
             </div>
             </div>
         </footer>
+         
+<!--
+         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+         <script src="js/video.js"></script>
+         <script>
+          $(document).ready(function() {
+            var videobackground = new $.backgroundVideo($('header'), {
+              "align": "centerXY",
+              "width": 1280,
+              "height": 720,
+              "path": "video/",
+              "filename": "movie3",
+              "types": ["mp4","ogg","webm"],
+              "preload": true,
+              "autoplay": true,
+              "loop": true
+            });
+          });
+</script>
+-->
           
     </body>
 </html>

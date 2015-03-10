@@ -73,6 +73,11 @@ section {
   display: block;
 }
 
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
 a {
   background: transparent;
 }
@@ -133,6 +138,11 @@ footer,
 header,
 section {
   display: block;
+}
+
+video {
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 a {
@@ -283,10 +293,27 @@ h2 {
 }
 
 header {
-  background-color: #000;
+  background-image: url("../img/bgHeader3.png");
+  background-repeat: repeat-x;
   padding: 4rem 0;
   color: #fff;
   text-align: center;
+  position: relative;
+}
+
+header #bgvid {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url("../video/movie3.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 
 header h2 {
@@ -333,6 +360,10 @@ header p {
 .seccion-1 .box h2 {
   font-family: GothamL;
   font-size: 2.142857142857143rem;
+}
+
+.seccion-2 img {
+  display: block;
 }
 
 .seccion-3 {
@@ -576,6 +607,10 @@ footer .info-adicional {
     width: 68.57142857142857rem;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  header.large {
+    padding-bottom: 15rem;
   }
 
   .seccion-1.large .wrap {
