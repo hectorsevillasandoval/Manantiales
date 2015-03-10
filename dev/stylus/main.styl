@@ -49,12 +49,6 @@ figure
 	padding 0
 ul
 	list-style none
-h1
-	font-family: GothamXL
-	font-size: rem(30)
-h2
-	font-family: GothamXL
-	font-size: rem(24)
 h3
 	font-family: GothamXL
 	font-size: rem(36)
@@ -104,8 +98,12 @@ parallax(imagen)
 */
 h1
 h2
-	font-family GothamL
+	font-family GothamXL
 	margin-top 0
+h1
+	font-size rem(40)
+h2
+	font-size rem(36)
 .wrap
 	padding 0 1rem
 .info
@@ -134,11 +132,21 @@ header
 	background-color #000
 	padding 4rem 0
 	color white
+	text-align center
+	h2
+		font-size rem(46)
 	h3
 		font-family pristina
 		letter-spacing 1px
 		padding 2rem 0 3rem 0
 		text-align center
+		font-size rem(46)
+	h4
+		font-family GothamB
+		font-size rem(22)
+	p
+		font-family GothamBK
+		font-size rem(22)
 		
 .seccion-1
 	color white
@@ -148,6 +156,9 @@ header
 	.box
 		text-align center
 		margin-bottom 1.8rem
+		h2
+			font-family GothamL
+			font-size rem(30)
 .seccion-3
 	background-color azul-oscuro
 	padding 1rem 0 6rem 0
@@ -172,6 +183,11 @@ header
 	color white
 	padding-top 2rem
 	padding-bottom 2rem
+	p
+		font-family GothamL
+		font-size rem(26)
+		span
+			font-family GothamBK
 .seccion-5
 	background-image url("../img/comentarios-seccion-4.jpg")
 	background-position top center
@@ -210,6 +226,8 @@ header
 .seccion-7
 	background-color gris-tono2
 	color azul-oscuro
+	padding-top 2rem
+	padding-bottom 2rem
 	h2
 		text-align center
 	ul
@@ -226,7 +244,7 @@ footer
 		background-color azul-oscuro
 		margin-bottom 2rem
 	.formulario
-		max-width 50%
+		max-width 90%
 		margin-left auto
 		margin-right auto
 		input
@@ -242,12 +260,98 @@ footer
 				margin-right auto
 				border 0
 				border-radius 5px
-				display inline-block
+				display block
 		textarea
 			color azul-oscuro
 			padding 2rem 1rem
 			margin-bottom 1rem
+	.info-adicional
+		text-align center
+
+@media screen and (min-width:768px)
+	.info
+		&.medium
+			.wrap
+				clearfix()
+			.left
+				text-align left
+				float left
+				padding-top 4px
+				p
+					alinear()
+					&:first-child
+						margin-right 1rem
+			.fbook
+				alinear()
+				float right
+	.seccion-1
+		&.medium
+			.box
+				max-width 60%
+				margin-left auto
+				margin-right auto
+	.seccion-6
+		&.medium
+			ul
+				margin-left 4rem
+	.seccion-7
+		&.medium
+			.wrap
+				max-width 80%
+				margin-left auto
+				margin-right auto
+			.left
+			.right
+				alinear()
+			.left
+				margin-right 2rem
 				
+@media screen and (min-width:1000px)
+	.wrap
+		width rem(960)
+		margin-left auto
+		margin-right auto
+	.seccion-1
+		&.large
+			.wrap
+				width rem(960)
+				margin-left auto
+				margin-right auto
+				.box
+					max-width 32%
+					margin-top 4rem
+					alinear()
+					p
+						padding 2rem
+						box-sizing border-box
+					&:nth-child(2)
+						margin-left 1rem
+						margin-right 1rem
+	.seccion-7
+		&.large
+			.proyectos
+				max-width 75%
+				margin-left auto
+				margin-right auto
+				text-align center
+				.left
+					text-align left
+	footer
+		&.large
+			.formulario
+				max-width 75%
+			.info-adicional
+				clearfix()
+				.left
+					float left
+					text-align left
+					display inline-block
+					vertical-align bottom
+				.right
+					float right
+					display inline-block
+					vertical-align bottom
+					padding-top 2rem
 
 	
 			

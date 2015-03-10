@@ -202,11 +202,6 @@ ul {
   list-style: none;
 }
 
-h2 {
-  font-family: GothamXL;
-  font-size: 1.714285714285714rem;
-}
-
 h3 {
   font-family: GothamXL;
   font-size: 2.571428571428572rem;
@@ -239,8 +234,12 @@ body {
 }
 
 h2 {
-  font-family: GothamL;
+  font-family: GothamXL;
   margin-top: 0;
+}
+
+h2 {
+  font-size: 2.571428571428572rem;
 }
 
 .wrap {
@@ -287,6 +286,11 @@ header {
   background-color: #000;
   padding: 4rem 0;
   color: #fff;
+  text-align: center;
+}
+
+header h2 {
+  font-size: 3.285714285714286rem;
 }
 
 header h3 {
@@ -294,6 +298,17 @@ header h3 {
   letter-spacing: 1px;
   padding: 2rem 0 3rem 0;
   text-align: center;
+  font-size: 3.285714285714286rem;
+}
+
+header h4 {
+  font-family: GothamB;
+  font-size: 1.571428571428571rem;
+}
+
+header p {
+  font-family: GothamBK;
+  font-size: 1.571428571428571rem;
 }
 
 .seccion-1 {
@@ -313,6 +328,11 @@ header h3 {
 .seccion-1 .box {
   text-align: center;
   margin-bottom: 1.8rem;
+}
+
+.seccion-1 .box h2 {
+  font-family: GothamL;
+  font-size: 2.142857142857143rem;
 }
 
 .seccion-3 {
@@ -352,6 +372,15 @@ header h3 {
   color: #fff;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.seccion-4 p {
+  font-family: GothamL;
+  font-size: 1.857142857142857rem;
+}
+
+.seccion-4 p span {
+  font-family: GothamBK;
 }
 
 .seccion-5 {
@@ -407,6 +436,8 @@ header h3 {
 .seccion-7 {
   background-color: #b3b3b3;
   color: #082c4e;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .seccion-7 h2 {
@@ -444,7 +475,7 @@ footer .titulo {
 }
 
 footer .formulario {
-  max-width: 50%;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -465,11 +496,153 @@ footer .formulario input[type="submit"] {
   border: 0;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  display: inline-block;
+  display: block;
 }
 
 footer .formulario textarea {
   color: #082c4e;
   padding: 2rem 1rem;
   margin-bottom: 1rem;
+}
+
+footer .info-adicional {
+  text-align: center;
+}
+
+@media screen and (min-width:768px) {
+  .info.medium .wrap {
+    zoom: 1;
+  }
+
+  .info.medium .wrap:before,
+  .info.medium .wrap:after {
+    content: "";
+    display: table;
+  }
+
+  .info.medium .wrap:after {
+    clear: both;
+  }
+
+  .info.medium .left {
+    text-align: left;
+    float: left;
+    padding-top: 4px;
+  }
+
+  .info.medium .left p {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .info.medium .left p:first-child {
+    margin-right: 1rem;
+  }
+
+  .info.medium .fbook {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+  }
+
+  .seccion-1.medium .box {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .seccion-6.medium ul {
+    margin-left: 4rem;
+  }
+
+  .seccion-7.medium .wrap {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .seccion-7.medium .left {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .seccion-7.medium .left {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .wrap {
+    width: 68.57142857142857rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .seccion-1.large .wrap {
+    width: 68.57142857142857rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .seccion-1.large .wrap .box {
+    max-width: 32%;
+    margin-top: 4rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .seccion-1.large .wrap .box p {
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .seccion-1.large .wrap .box:nth-child(2) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .seccion-7.large .proyectos {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .seccion-7.large .proyectos .left {
+    text-align: left;
+  }
+
+  footer.large .formulario {
+    max-width: 75%;
+  }
+
+  footer.large .info-adicional {
+    zoom: 1;
+  }
+
+  footer.large .info-adicional:before,
+  footer.large .info-adicional:after {
+    content: "";
+    display: table;
+  }
+
+  footer.large .info-adicional:after {
+    clear: both;
+  }
+
+  footer.large .info-adicional .left {
+    float: left;
+    text-align: left;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  footer.large .info-adicional .right {
+    float: right;
+    display: inline-block;
+    vertical-align: bottom;
+    padding-top: 2rem;
+  }
 }
