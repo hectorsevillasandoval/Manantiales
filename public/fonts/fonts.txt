@@ -1,0 +1,10 @@
+Open Sans Regular
+FontAwesome from CDN
+Pristina pay fonts2web
+
+Gotham Extra Light pay fonts2web
+Gotham Book pay fonts2web
+Gotham Bold pay fonts2web
+Gotham Light pay fonts2web
+Gotham Medium pay fonts2web
+Gotham Light Italic pay fonts2web

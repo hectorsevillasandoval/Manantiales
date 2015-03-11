@@ -20,6 +20,7 @@
 
 @import 'fonts.styl'
 @import 'normalize.styl'
+@import 'bxslider.styl'
 @import 'nib'
 
 
@@ -132,8 +133,9 @@ h2
 
 //Cabecera
 header
-	background-image url("../img/bgHeader3.png")
-	background-repeat repeat-x
+	background-image url("../img/bgHeader3.png"),url("../img/map.jpg") 
+	background-repeat repeat-x, no-repeat
+	background-position top center
 	padding 4rem 0
 	color white
 	text-align center
@@ -152,18 +154,22 @@ header
 		background-size cover
 	h2
 		font-size rem(46)
+		text-shadow 4px 4px 2px #444
 	h3
 		font-family pristina
 		letter-spacing 1px
 		padding 2rem 0 3rem 0
 		text-align center
 		font-size rem(46)
+		text-shadow 4px 4px 2px #444
 	h4
 		font-family GothamB
 		font-size rem(22)
+		text-shadow 4px 4px 2px #444
 	p
 		font-family GothamBK
 		font-size rem(22)
+		text-shadow 4px 4px 2px #444
 		
 .seccion-1
 	color white
@@ -216,9 +222,22 @@ header
 	padding-top 2rem
 	padding-bottom 2rem
 	margin-bottom -28px
+	text-align center
 	h2
 		text-transform uppercase
 		text-align center
+	p
+		font-family GothamLIta
+		font-size rem(18)
+		padding 1rem
+		&.content
+			margin 1rem auto 2rem auto
+			line-height 1.5
+		&.autor
+			font-family GothamB
+			margin .5rem auto
+		&.puesto
+			font-family GothamBK
 .seccion-6
 	background-image url("../img/fondo-premios-seccion-4.png")
 	background-position top center
@@ -259,7 +278,7 @@ footer
 	parallax("footer-fondo.jpg")
 	color white
 	.titulo
-		padding 2rem 1rem 1rem 1rem
+		padding 2rem 1rem
 		text-align center
 		background-color azul-oscuro
 		margin-bottom 2rem
@@ -306,10 +325,14 @@ footer
 				float right
 	.seccion-1
 		&.medium
+			box-sizing border-box
 			.box
 				max-width 60%
 				margin-left auto
 				margin-right auto
+	.seccion-5
+		&.medium
+			min-height rem(475)
 	.seccion-6
 		&.medium
 			ul
@@ -336,6 +359,7 @@ footer
 			padding-bottom 15rem
 	.seccion-1
 		&.large
+			background-size initial
 			.wrap
 				width rem(960)
 				margin-left auto
@@ -350,19 +374,44 @@ footer
 					&:nth-child(2)
 						margin-left 1rem
 						margin-right 1rem
+	.seccion-5
+		&.large
+			margin-bottom -41px
+	.seccion-6
+		&.large
+			background-size initial
+			min-height rem(523)
+			padding-top 6rem
+			box-sizing border-box
+			ul
+				li
+					font-family GothamBK
+					font-size rem(24)
 	.seccion-7
 		&.large
 			.proyectos
-				max-width 75%
+				max-width 100%
 				margin-left auto
 				margin-right auto
 				text-align center
 				.left
 					text-align left
+				li
+					font-size rem(22)
 	footer
 		&.large
+			background-size initial
+			.titulo
+				h2
+					font-size rem(50)
+				p
+					font-family GothamM
+					font-size rem(20)
 			.formulario
 				max-width 75%
+				input
+					&[type="submit"]
+						font-size 2rem
 			.info-adicional
 				clearfix()
 				.left

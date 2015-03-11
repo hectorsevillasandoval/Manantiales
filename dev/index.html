@@ -12,6 +12,7 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
         
     </head>
     <body>
@@ -35,10 +36,10 @@
         </div> <!-- FIN INFO -->
         <header class="large">
            
-           <video autoplay loop poster="video/movie3.jpg" id="bgvid">
+           <!-- <video autoplay loop poster="video/movie3.jpg" id="bgvid">
                 <source src="video/movie3.webm" type="video/webm">
                 <source src="video/movie3.mp4" type="video/mp4">
-            </video>
+            </video> -->
            
            
             <div class="wrap">
@@ -95,7 +96,7 @@
                 </p>
             </div>
         </section><!-- FIN SECCION 3 -->
-        <section class="seccion-4">
+        <section class="seccion-4 large">
             <div class="wrap">
                 <h2>Financiamiento</h2>
                 <p>Financiamiento hasta el <span>90%</span> del precio con los principales bancos. <br><br>
@@ -108,12 +109,41 @@
 
             </div>
         </section><!-- FIN SECCION 4 -->
-        <section class="seccion-5">
+        <section class="seccion-5 medium large">
+            <div class="wrap">
             <h2>testimonios</h2>
-
+            <ul class="slider">
+                <li>
+                    <p class="content">
+                        ”Para nosotros Su Casa representa algo más que un cliente, dado que nuestra relación ha trascendido a algo más que transacciones compra venta de productos. 
+Con Su Casa tenemos la oportunidad de aprender mutuamente dado el profesionalismo con el que operan y la transparencia con la que se generan discusiones y pláticas diarias.
+Es un placer contar con clientes como ustedes y contribuir al desarrollo de Nicaragua en conjunto.”
+                    </p>
+                    <p class="autor">
+                        Jorge Paredes Ortega
+                    </p>
+                    <p class="puesto">
+                        Director de Soluciones para Canal de Distribucion e Industriales - Nicaragua CEMEX 
+                    </p>
+                </li>
+                <li>
+                    <p class="content">
+                        ”Para nosotros Su Casa representa algo más que un cliente, dado que nuestra relación ha trascendido a algo más que transacciones compra venta de productos. 
+Con Su Casa tenemos la oportunidad de aprender mutuamente dado el profesionalismo con el que operan y la transparencia con la que se generan discusiones y pláticas diarias.
+Es un placer contar con clientes como ustedes y contribuir al desarrollo de Nicaragua en conjunto.”
+                    </p>
+                    <p class="autor">
+                        Jorge Paredes Ortega
+                    </p>
+                    <p class="puesto">
+                        Director de Soluciones para Canal de Distribucion e Industriales - Nicaragua CEMEX 
+                    </p>
+                </li>
+            </ul>
+</div>
         </section> <!-- FIN SECCION 5 -->
 
-        <section class="seccion-6 medium">
+        <section class="seccion-6 medium large">
             <div class="wrap">
             <h2>Premios y obras importantes</h2>
             <ul>
@@ -189,6 +219,18 @@
             </div>
             </div>
         </footer>
+
+
+         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+         <script src="//cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.min.js"></script>
+
+         <script>
+
+            $('.slider').bxSlider({
+  adaptiveHeight: true,
+  mode: 'fade'
+});
+         </script>
          
 <!--
          <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>

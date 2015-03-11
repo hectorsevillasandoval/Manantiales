@@ -73,11 +73,6 @@ section {
   display: block;
 }
 
-video {
-  display: inline-block;
-  vertical-align: baseline;
-}
-
 a {
   background: transparent;
 }
@@ -138,11 +133,6 @@ footer,
 header,
 section {
   display: block;
-}
-
-video {
-  display: inline-block;
-  vertical-align: baseline;
 }
 
 a {
@@ -293,31 +283,18 @@ h2 {
 }
 
 header {
-  background-image: url("../img/bgHeader3.png");
-  background-repeat: repeat-x;
+  background-image: url("../img/bgHeader3.png"),url("../img/map.jpg");
+  background-repeat: repeat-x,no-repeat;
+  background-position: top center;
   padding: 4rem 0;
   color: #fff;
   text-align: center;
   position: relative;
 }
 
-header #bgvid {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  background: url("../video/movie3.jpg") no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-}
-
 header h2 {
   font-size: 3.285714285714286rem;
+  text-shadow: 4px 4px 2px #444;
 }
 
 header h3 {
@@ -326,16 +303,19 @@ header h3 {
   padding: 2rem 0 3rem 0;
   text-align: center;
   font-size: 3.285714285714286rem;
+  text-shadow: 4px 4px 2px #444;
 }
 
 header h4 {
   font-family: GothamB;
   font-size: 1.571428571428571rem;
+  text-shadow: 4px 4px 2px #444;
 }
 
 header p {
   font-family: GothamBK;
   font-size: 1.571428571428571rem;
+  text-shadow: 4px 4px 2px #444;
 }
 
 .seccion-1 {
@@ -424,11 +404,32 @@ header p {
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-bottom: -28px;
+  text-align: center;
 }
 
 .seccion-5 h2 {
   text-transform: uppercase;
   text-align: center;
+}
+
+.seccion-5 p {
+  font-family: GothamLIta;
+  font-size: 1.285714285714286rem;
+  padding: 1rem;
+}
+
+.seccion-5 p.content {
+  margin: 1rem auto 2rem auto;
+  line-height: 1.5;
+}
+
+.seccion-5 p.autor {
+  font-family: GothamB;
+  margin: .5rem auto;
+}
+
+.seccion-5 p.puesto {
+  font-family: GothamBK;
 }
 
 .seccion-6 {
@@ -499,7 +500,7 @@ footer {
 }
 
 footer .titulo {
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 2rem 1rem;
   text-align: center;
   background-color: #082c4e;
   margin-bottom: 2rem;
@@ -576,10 +577,20 @@ footer .info-adicional {
     float: right;
   }
 
+  .seccion-1.medium {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
   .seccion-1.medium .box {
     max-width: 60%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .seccion-5.medium {
+    min-height: 33.92857142857143rem;
   }
 
   .seccion-6.medium ul {
@@ -613,6 +624,12 @@ footer .info-adicional {
     padding-bottom: 15rem;
   }
 
+  .seccion-1.large {
+    -webkit-background-size: initial;
+    -moz-background-size: initial;
+    background-size: initial;
+  }
+
   .seccion-1.large .wrap {
     width: 68.57142857142857rem;
     margin-left: auto;
@@ -638,8 +655,28 @@ footer .info-adicional {
     margin-right: 1rem;
   }
 
+  .seccion-5.large {
+    margin-bottom: -41px;
+  }
+
+  .seccion-6.large {
+    -webkit-background-size: initial;
+    -moz-background-size: initial;
+    background-size: initial;
+    min-height: 37.357142857142854rem;
+    padding-top: 6rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .seccion-6.large ul li {
+    font-family: GothamBK;
+    font-size: 1.714285714285714rem;
+  }
+
   .seccion-7.large .proyectos {
-    max-width: 75%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -649,8 +686,31 @@ footer .info-adicional {
     text-align: left;
   }
 
+  .seccion-7.large .proyectos li {
+    font-size: 1.571428571428571rem;
+  }
+
+  footer.large {
+    -webkit-background-size: initial;
+    -moz-background-size: initial;
+    background-size: initial;
+  }
+
+  footer.large .titulo h2 {
+    font-size: 3.571428571428572rem;
+  }
+
+  footer.large .titulo p {
+    font-family: GothamM;
+    font-size: 1.428571428571429rem;
+  }
+
   footer.large .formulario {
     max-width: 75%;
+  }
+
+  footer.large .formulario input[type="submit"] {
+    font-size: 2rem;
   }
 
   footer.large .info-adicional {
