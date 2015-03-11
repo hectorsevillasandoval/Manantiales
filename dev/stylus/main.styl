@@ -100,6 +100,10 @@ parallax(imagen)
     GOTHAM LIGHT ITALIC = GothamLIta
 
 */
+.hidden
+	opacity 0
+.visible
+	opacity 1
 h1
 h2
 	font-family GothamXL
@@ -280,7 +284,7 @@ footer
 	.titulo
 		padding 2rem 1rem
 		text-align center
-		background-color azul-oscuro
+		background-color rgba(8,44,78,.8)
 		margin-bottom 2rem
 	.formulario
 		max-width 90%
@@ -291,6 +295,16 @@ footer
 			padding 2rem 1rem
 			margin-bottom 1rem
 			&[type="submit"]
+				color white
+				background-color azul-claro
+				text-transform uppercase
+				padding 1rem 2rem
+				margin-left auto
+				margin-right auto
+				border 0
+				border-radius 5px
+				display block
+		button
 				color white
 				background-color azul-claro
 				text-transform uppercase
@@ -359,7 +373,7 @@ footer
 			padding-bottom 15rem
 	.seccion-1
 		&.large
-			background-size initial
+			//background-size initial
 			.wrap
 				width rem(960)
 				margin-left auto
@@ -400,7 +414,7 @@ footer
 					font-size rem(22)
 	footer
 		&.large
-			background-size initial
+			//background-size initial
 			.titulo
 				h2
 					font-size rem(50)
@@ -412,6 +426,8 @@ footer
 				input
 					&[type="submit"]
 						font-size 2rem
+				button
+					font-size 2rem
 			.info-adicional
 				clearfix()
 				.left
