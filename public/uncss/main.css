@@ -249,6 +249,7 @@ body {
   font-family: OpenSans400;
   font-size: 14px;
   font-weight: normal;
+  -webkit-transform: translateZ(0) !important;
 }
 
 h2 {
@@ -640,6 +641,12 @@ footer .info-adicional {
 
   header.large {
     padding-bottom: 15rem;
+  }
+
+  .seccion-1.large {
+    -webkit-background-size: initial;
+    -moz-background-size: initial;
+    background-size: initial;
   }
 
   .seccion-1.large .wrap {

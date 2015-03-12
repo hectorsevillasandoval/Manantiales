@@ -70,6 +70,7 @@ body
 	font-family: OpenSans400
 	font-size: 14px
 	font-weight: normal
+	-webkit-transform translateZ(0) !important
 icon(icono)
 	content "\"+icono
 	font-family fontawesome
@@ -104,6 +105,8 @@ parallax(imagen)
 	opacity 0
 .visible
 	opacity 1
+.bx-clone
+	display none
 h1
 h2
 	font-family GothamXL
@@ -373,7 +376,7 @@ footer
 			padding-bottom 15rem
 	.seccion-1
 		&.large
-			//background-size initial
+			background-size initial
 			.wrap
 				width rem(960)
 				margin-left auto
@@ -414,7 +417,6 @@ footer
 					font-size rem(22)
 	footer
 		&.large
-			//background-size initial
 			.titulo
 				h2
 					font-size rem(50)
