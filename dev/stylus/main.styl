@@ -38,6 +38,8 @@ rem(pixel)
 	(pixel/14)rem
 html
 	font-size: 14px
+	height 100%
+	min-height 100%
 a
 	text-decoration none
 img
@@ -71,6 +73,7 @@ body
 	font-size: 14px
 	font-weight: normal
 	-webkit-transform translateZ(0) !important
+	min-height 100%
 icon(icono)
 	content "\"+icono
 	font-family fontawesome
@@ -78,13 +81,17 @@ icon(icono)
 	padding-right .7rem
 	
 parallax(imagen)
-	background-attachment fixed
+	//background-attachment fixed
 	background-image url(../img/imagen)
 	background-position top center
 	background-repeat no-repeat
-	background-size cover
-	//height 70vh
+	//background-size cover
+	//height 100vh
 	position relative
+	top 0
+	right 0
+  	bottom 0
+  	left 0
 	//text-indent -9999px
 //Video Background test
 
@@ -137,6 +144,14 @@ h2
 			&:before
 				icon(f230)
 				font-size 2rem
+.box
+h2
+h3
+p
+ul
+	animation-duration 8s
+	animation-delay .5s
+	//animation-iteration-count infinite
 
 //Cabecera
 header
@@ -417,6 +432,7 @@ footer
 					font-size rem(22)
 	footer
 		&.large
+			position inherit
 			.titulo
 				h2
 					font-size rem(50)

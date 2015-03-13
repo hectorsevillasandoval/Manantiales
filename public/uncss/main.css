@@ -198,6 +198,8 @@ textarea {
 
 html {
   font-size: 14px;
+  height: 100%;
+  min-height: 100%;
 }
 
 a {
@@ -250,6 +252,7 @@ body {
   font-size: 14px;
   font-weight: normal;
   -webkit-transform: translateZ(0) !important;
+  min-height: 100%;
 }
 
 h2 {
@@ -301,6 +304,23 @@ h2 {
   font-size: 2rem;
 }
 
+.box,
+h2,
+h3,
+p,
+ul {
+  -webkit-animation-duration: 8s;
+  -moz-animation-duration: 8s;
+  -o-animation-duration: 8s;
+  -ms-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-animation-delay: .5s;
+  -moz-animation-delay: .5s;
+  -o-animation-delay: .5s;
+  -ms-animation-delay: .5s;
+  animation-delay: .5s;
+}
+
 header {
   background-image: url("../img/bgHeader3.png"),url("../img/map.jpg");
   background-repeat: repeat-x,no-repeat;
@@ -339,14 +359,12 @@ header p {
 
 .seccion-1 {
   color: #fff;
-  background-attachment: fixed;
   background-image: url("../img/gimnasio-seccion-2.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
   position: relative;
+  top: 0;
+  right: 0;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
@@ -507,14 +525,12 @@ header p {
 }
 
 footer {
-  background-attachment: fixed;
   background-image: url("../img/footer-fondo.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
   position: relative;
+  top: 0;
+  right: 0;
   color: #fff;
 }
 
@@ -707,6 +723,10 @@ footer .info-adicional {
 
   .seccion-7.large .proyectos li {
     font-size: 1.571428571428571rem;
+  }
+
+  footer.large {
+    position: inherit;
   }
 
   footer.large .titulo h2 {
