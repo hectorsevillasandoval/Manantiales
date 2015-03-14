@@ -212,18 +212,21 @@ header
 	padding 1rem 0 6rem 0
 	color white
 	position relative
-	&:after
-		icon(f107)
-		color white
-		position absolute
-		left 46%
-		bottom 3%
-		font-size 5rem
+	.viewMore
+		&:after
+			icon(f107)
+			color white
+			position absolute
+			left 46%
+			bottom 3%
+			font-size 5rem
 	h2
 		text-align center
 	p
 		border-bottom 1px solid white
 		padding-bottom 2rem
+		display none
+		//transition all 1s ease 1s
 .seccion-4
 	background-image url("../img/fondo-seccion-3.jpg")
 	background-position top center

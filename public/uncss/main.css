@@ -390,7 +390,7 @@ header p {
   position: relative;
 }
 
-.seccion-3:after {
+.seccion-3 .viewMore:after {
   content: '\f107';
   font-family: fontawesome;
   color: #1363a8;
@@ -409,6 +409,7 @@ header p {
 .seccion-3 p {
   border-bottom: 1px solid #fff;
   padding-bottom: 2rem;
+  display: none;
 }
 
 .seccion-4 {

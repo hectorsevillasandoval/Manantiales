@@ -114,6 +114,7 @@
 				<br>
 				<br>El proyecto esta bajo el regimen de condominio. Los propietarios determinaran una admiinstración y tendran un presupuesto de gastos de seguridad, servicios publicos comunales, mantenimiento de areas comunes, etc. y cada propietario pagara una cuota mensual para laoperación y mantenimiento. La administración del condominio sera llevada o contratada por los propietarios y no por la desarrolladora.
 			</p>
+			<a href="#" class="viewMore"></a>
 		</div>
 	</section>
 	<!-- FIN SECCION 3 -->
@@ -263,6 +264,11 @@
 				adaptiveHeight: true,
 				mode: 'fade'
 			});
+
+				$('.seccion-3 .viewMore').on('click', function(e){
+					e.preventDefault();
+					$('.seccion-3 p').slideToggle('slow');
+				});
 
 			$('.slide2').bxSlider({
 				adaptiveHeight: true,
