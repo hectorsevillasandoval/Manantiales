@@ -4,20 +4,36 @@ fuente(nombre,miFuente)
 		font-weight normal
 		src url('../fonts/'+ miFuente +'.eot')
 		src url('../fonts/'+ miFuente +'.eot?#iefix') format('embedded-opentype'),url('../fonts/'+miFuente+'.woff') format('woff'),url('../fonts/'+miFuente+'.ttf') format('truetype'),url('../fonts/'+miFuente+'.svg#'+miFuente) format('svg')
+		
+//BUG CHROME
+bug(nombre2, fuente)
+	@media screen and (-webkit-min-device-pixel-ratio:0)
+		@font-face
+			font-family nombre
+			src: url('../fonts/'+ fuente + '.svg') format('svg')
 
 fuente(OpenSans400, OpenSans-Regular-webfont)
+bug(OpenSans400, OpenSans-Regular-webfont)
 
 fuente(pristina,Pristina)
+bug(pristina,Pristina)
+
 
 fuente(GothamXL, Gotham-XLight)
+bug(GothamXL, Gotham-XLight)
 
 fuente(GothamBK,Gotham-Book)
+bug(GothamBK,Gotham-Book)
 
 fuente(GothamB, Gotham-Bold)
+bug(GothamB, Gotham-Bold)
 
 fuente(GothamL,Gotham-Light)
+bug(GothamL,Gotham-Light)
 
 fuente(GothamM,Gotham-Medium)
+bug(GothamM,Gotham-Medium)
 
 fuente(GothamLIta, Gotham-LightIta)
+bug(GothamLIta, Gotham-LightIta)
 
